@@ -1,11 +1,75 @@
-<div class="carousel slide" id="ekoCarousel">
-  
-</div>
+<div class="carousel slide" id="ekoCarousel" data-ride="carousel">
+
+  {{!-- Indicators --}}
+  <ol class="carousel-indicators">
+    <li data-slide-to="0" data-target="#ekoCarousel" class="active" ></li>
+    <li data-slide-to="1" data-target="#ekoCarousel"></li>
+    <li data-slide-to="2" data-target="#ekoCarousel"></li>
+  </ol>
+
+  {{!-- Slide wrapper --}}
+  <div class="carousel-inner">
+    <div class="item active" id="slide1">
+      <div class="carousel-caption">
+        <h4>EkoTERM</h4>
+        <p>Responsive shopping cart application</p>
+      </div>
+    </div>
+
+    <div class="item" id="slide2">
+      <div class="carousel-caption">
+        <h4>Краны и вентили</h4>
+        <p>Закрути их всех</p>
+      </div>
+    </div>
+
+    <div class="item" id="slide3">
+      <div class="carousel-caption">
+        <h4>Фильтры всех типов</h4>
+        <p>Отфильтруй всё от всего</p>
+      </div>
+    </div>
+  </div>{{!-- carousel-inner --}}
+
+  {{!-- Controls --}}
+  <a href="#ekoCarousel" class="left carousel-control" data-slide="prev"><span class="icon-prev"></span></a>
+  <a href="#ekoCarousel" class="right carousel-control" data-slide="next"><span class="icon-next"></span></a>
+
+</div>{{!-- end ekoCarousel --}}
 
 <div class="row" id="bigCallout">
-  <h2 id="title">Welcome to Ember</h2>
-  
-</div>
+  <div class="col-md-12">
+
+    {{#if isAlertNeeded}}
+      {{#bs-alert type="success"}}
+        <h4>Success!</h4>
+        <p>You just made this element display by using jQuery</p>
+      {{/bs-alert}}
+    {{/if}}
+    
+
+    {{!-- Visible only on small devices --}}
+    <div class="well well-small visible-xs">
+      {{#link-to "about" class="btn btn-lg btn-block btn-default"}}
+        <span class="glyphicon glyphicon-phone"> Позвоните нам!</span>
+      {{/link-to}}
+    </div>{{!-- end well-small --}}
+
+    <div class="well">
+      <div class="page-header">
+        <h1>A Fancy Header <small>A subheader for extra awesome</small></h1>
+      </div>{{!-- end page-header --}}
+
+      <p class="lead">Some solid leading copy will help get your users engaged. Use this area to come up with something real nice.</p>
+
+      {{link-to "About" "about" class="btn btn-lg btn-primary"}}
+      {{link-to "A secondary link" "about" class="btn btn-lg btn-link"}}
+      <button class="btn btn-lg btn-link" {{action "toggleAlert"}}>
+        Toggle alert
+      </button>
+    </div>{{!-- end well --}}
+  </div>{{!-- end col-12 --}}
+</div>{{!-- end bigCallout --}}
 
 <div class="row" id="featuresHeading">
   
