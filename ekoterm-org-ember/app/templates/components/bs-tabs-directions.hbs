@@ -1,0 +1,97 @@
+<div class="tabbable">
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active">
+      <a href="#tab1" data-toggle="tab" aria-controls="tab1" role="tab">
+        Как добраться
+      </a>
+    </li>
+    <li role="presentation">
+      <a href="#tab2" data-toggle="tab" aria-controls="tab2" role="tab">
+        Больше информации
+      </a>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="tab1">
+      <h4><span class="glyphicon glyphicon-map-marker"></span>
+        Our Location <small>More Like our favorite surf spot</small>
+      </h4>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2676.0489465138867!2d35.065245315077156!3d47.8773795772272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc641e74c31c5f%3A0xad4095f59809042c!2z0KDQtdC70YzRlNGE0L3QsCDQstGD0LsuLCAy0JAsINCX0LDQv9C-0YDRltC20LbRjywg0JfQsNC_0L7RgNGW0LfRjNC60LAg0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1451749319643" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+      <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=xp37OA6__ebYFThZ5q3GM5b4_d6E3WYg&width=100%&height=300&lang=uk_UA&sourceType=constructor"></script>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias aspernatur aut alias minima. Nostrum ea neque laborum. Veritatis impedit vitae illum eum exercitationem voluptates reiciendis eveniet odio, reprehenderit consectetur, numquam!</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias aspernatur aut alias minima. Nostrum ea neque laborum. Veritatis impedit vitae illum eum exercitationem voluptates reiciendis eveniet odio, reprehenderit consectetur, numquam!</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias aspernatur aut alias minima. Nostrum ea neque laborum. Veritatis impedit vitae illum eum exercitationem voluptates reiciendis eveniet odio, reprehenderit consectetur, numquam!</p>
+    </div>{{!-- end tab1 --}}
+
+    <div class="tab-pane" id="tab2">
+      <h4>
+        A left floated picture <small>Using Placehold.it</small>
+      </h4>
+
+      <img src="http://placehold.it/140" alt="Placeholder" class="thumbnail pull-left">
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias aspernatur aut alias minima. Nostrum ea neque laborum. Veritatis impedit vitae illum eum exercitationem voluptates reiciendis eveniet odio, reprehenderit consectetur, numquam!</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias aspernatur aut alias minima. Nostrum ea neque laborum. Veritatis impedit vitae illum eum exercitationem voluptates reiciendis eveniet odio, reprehenderit consectetur, numquam!</p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias aspernatur aut alias minima. Nostrum ea neque laborum. Veritatis impedit vitae illum eum exercitationem voluptates reiciendis eveniet odio, reprehenderit consectetur, numquam!</p>
+
+      <hr>
+
+      <button class="btn btn-warning" {{action "showModal"}}>
+        Click for a Modal Window!
+      </button>
+
+      {{#bs-modal open=true title="Простой попап"}}
+        {{!-- {{#bs-modal-body}}Are you sure? --}}
+          <h4>Hello world!</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, est. Deserunt error alias, totam nobis sed nisi a quasi, odit dolore excepturi voluptatem, hic consectetur mollitia porro et voluptatum doloremque?</p>
+
+          <h4>Popovers in modal</h4>
+          <a href="#" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data="You clicked it!" data-content="I knew you would">Don't click this button</a>
+
+          <h4>Tooltips in modal</h4>
+          <a href="">This link</a> should have a tooltip, and so should <a href="">this one</a>!
+
+          <hr>
+
+          <p><small class="text-muted">PS. Эта форма ничего не делает. Просто напоминание</small></p>
+
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="inputName" class="col-lg-2 control-label">Name</label>
+              <div class="col-lg-10">
+                <input type="text" class="form-control" id="inputName" placeholder="Name">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="inputEmail" class="col-lg-2 control-label">Name</label>
+              <div class="col-lg-10">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="inputMessage" class="col-lg-2 control-label">Message</label>
+              <div class="col-lg-10">
+                <textarea name="Message" cols="30" rows="3" class="form-control" id="inputMessage" placeholder="Message"></textarea>
+
+                <div class="btn btn-success pull-right" type="submit">Send</div>
+              </div>
+            </div>
+          </form>
+        {{!-- {{/bs-modal-body}} --}}
+
+        {{!-- {{bs-modal-footer closeTitle="Отмена" submitTitle="Ок"}} --}}
+      {{/bs-modal}}
+    </div>{{!-- end tab2 --}}
+  </div>
+</div>
+{{yield}}

@@ -80,20 +80,61 @@
 
 <div class="row" id="features">
   <div class="col-sm-4 feature">
-    <div class="panel">
+    <div class="panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title">Кран Маевского</h3>
       </div>
-      <img src="images/maevsk_01.jpg" alt="Кран Маевского">
 
-      <p>Супер кран маевского с полной закруткой и латунной откруткой</p>
+      <div class="panel-body">
+        <img src="images/maevsk_01.jpg" alt="Кран Маевского" class="img-thumbnail">
+
+        <p>Супер кран маевского с полной закруткой и латунной откруткой</p>
+
+        {{link-to "Заказать" "about" class="btn btn-warning btn-block"}}
+      </div>
     </div>
-  </div>
+  </div>{{!-- end feature --}}
+
+  <div class="col-sm-4 feature">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Кран Маевского 2</h3>
+      </div>
+
+      <div class="panel-body">
+        <img src="images/maevsk_02.jpg" alt="Кран Маевского" class="img-thumbnail">
+
+        <p>Супер кран маевского с полной закруткой и латунной откруткой</p>
+
+        {{link-to "Заказать" "about" class="btn btn-danger btn-block"}}
+      </div>
+    </div>
+  </div>{{!-- end feature --}}
+
+  <div class="col-sm-4 feature">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Кран Маевского 3</h3>
+      </div>
+
+      <div class="panel-body">
+        <img src="images/maevsk_03.jpg" alt="Кран 3" class="img-thumbnail">
+
+        <p>Супер кран маевского с полной закруткой и латунной откруткой</p>
+
+        {{link-to "Заказать сейчас" "about" class="btn btn-info btn-block"}}
+      </div>
+    </div>
+  </div>{{!-- end feature --}}
 </div>
 
 <div class="row" id="moreInfo">
+  <div class="col-sm-6">
+    <h3>Next Tabbable Content</h3>
 
-</div>
+    {{bs-tabs-directions}}
+  </div>{{!-- end col-sm-6 --}}
+</div>{{!-- end moreInfo --}}
 
 <div class="row" id="moreProducts">
   

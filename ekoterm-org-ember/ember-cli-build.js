@@ -33,10 +33,13 @@ module.exports = function(defaults) {
   // //   development: 'bower_components/bootstrap/dist/js/bootstrap.js',
   // //   production:  'bower_components/bootstrap/dist/js/bootstrap.min.js'
   // // });
-  
+
   // app.import('bower_components/bootstrap/dist/js/bootstrap.min.js');
   app.import('bower_components/bootstrap/js/collapse.js');
   app.import('bower_components/bootstrap/js/carousel.js');
+  app.import('bower_components/bootstrap/js/tab.js');
+  app.import('bower_components/bootstrap/js/tooltip.js');
+  app.import('bower_components/bootstrap/js/popover.js');
 
   return app.toTree();
 };
