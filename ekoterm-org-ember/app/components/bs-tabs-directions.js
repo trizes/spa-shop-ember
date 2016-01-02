@@ -13,6 +13,7 @@ export default Ember.Component.extend({
   },
 
   initPopover: (function() {
-    return $('a.pop').popover();
+    $('a.pop').popover();
+    $('[rel="tooltip"]').tooltip();
   }).on('didInsertElement')
 });
