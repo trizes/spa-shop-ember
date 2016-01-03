@@ -21,6 +21,24 @@ footer {
   padding: 20px;
 }
 
+#searchInput, #searchGroup {
+  /*height: 45px;*/
+  width: 100%;
+}
+
+#searchForm {
+  margin-bottom: 15px;
+  height: 50px;
+}
+
+#formCol2 {
+  /*padding: 0;*/
+}
+
+#formCol10 {
+  padding: 0;
+}
+
 /*-----------------------------
   Typography
   -----------------------------*/
@@ -89,7 +107,24 @@ ul.unstyled {
   -----------------------------*/
 
 .searchInput {
-  width: 200px;
+  width: 100%;
+}
+
+.ekoterm-logo {
+  max-width: 120%;
+  max-height: 120%;
+}
+
+/*-----------------------------
+  Sidebar
+  -----------------------------*/
+
+#sidebar-wrapper {
+  /*background: #000;*/
+}
+
+.sidebar-nav {
+  list-style-type: none;
 }
 
 /*-----------------------------

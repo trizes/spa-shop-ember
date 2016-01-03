@@ -1,41 +1,16 @@
-<div class="carousel slide" id="ekoCarousel" data-ride="carousel">
 
-  {{!-- Indicators --}}
-  <ol class="carousel-indicators">
-    <li data-slide-to="0" data-target="#ekoCarousel" class="active" ></li>
-    <li data-slide-to="1" data-target="#ekoCarousel"></li>
-    <li data-slide-to="2" data-target="#ekoCarousel"></li>
-  </ol>
+<div class="row" id="menuAndSearch">
+  <div class="col-xs-4">
+    {{hover-products-menu}}
+  </div>
 
-  {{!-- Slide wrapper --}}
-  <div class="carousel-inner">
-    <div class="item active" id="slide1">
-      <div class="carousel-caption">
-        <h4>EkoTERM</h4>
-        <p>Responsive shopping cart application</p>
-      </div>
-    </div>
-
-    <div class="item" id="slide2">
-      <div class="carousel-caption">
-        <h4>Краны и вентили</h4>
-        <p>Закрути их всех</p>
-      </div>
-    </div>
-
-    <div class="item" id="slide3">
-      <div class="carousel-caption">
-        <h4>Фильтры всех типов</h4>
-        <p>Отфильтруй всё от всего</p>
-      </div>
-    </div>
-  </div>{{!-- carousel-inner --}}
-
-  {{!-- Controls --}}
-  <a href="#ekoCarousel" class="left carousel-control" data-slide="prev"><span class="icon-prev"></span></a>
-  <a href="#ekoCarousel" class="right carousel-control" data-slide="next"><span class="icon-next"></span></a>
-
-</div>{{!-- end ekoCarousel --}}
+  <div class="col-xs-8">
+    {{item-search}}
+  </div>
+  <div class="col-xs-8">
+    {{eko-carousel}}
+  </div>
+</div>
 
 <div class="row" id="bigCallout">
   <div class="col-md-12">

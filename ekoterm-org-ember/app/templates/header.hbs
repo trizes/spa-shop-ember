@@ -1,4 +1,4 @@
-{{!-- <nav class="navbar navbar-default">
+<nav class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-responsive-collapse" aria-expanded="false">
@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
       </button>
       {{#link-to "index" class="navbar-brand"}}
-        <img src="images/logo2.png" alt="EkoTERM">
+        <img src="images/logo.png" alt="EkoTERM" class="ekoterm-logo">
       {{/link-to}}
     </div>
 
@@ -19,37 +19,20 @@
             Главная <span class="sr-only">(current)</span>
           {{/link-to}}
         {{/link-to}}
-        {{#link-to 'about' tagName='li'}}
-          {{link-to "О нас" "about"}}
+
+        {{#link-to 'contacts' tagName='li'}}
+          {{link-to 'Контакты' 'contacts'}}
         {{/link-to}}
-        {{#bs-dropdown tagName="li"}}
-          {{#bs-dropdown-toggle}}
-            Меню <span class="caret"></span>
-          {{/bs-dropdown-toggle}}
-          {{#bs-dropdown-menu}}
-            <li>{{#link-to "index"}} Web Design {{/link-to}}</li>
-            <li>{{#link-to "index"}} Web Dev {{/link-to}}</li>
-            <li role="separator" class="divider"></li>
-            <li class="dropdown-header">More Services</li>
-            <li>{{#link-to "index"}} Separated link {{/link-to}}</li>
-            <li role="separator" class="divider"></li>
-            <li>{{#link-to "index"}} One more separated link {{/link-to}}</li>
-          {{/bs-dropdown-menu}}
-        {{/bs-dropdown}}
 
+        {{#link-to 'about' tagName='li'}}
+          {{link-to 'О магазине' 'about'}}
+        {{/link-to}}
       </ul>
-
-      {{#bs-form action="submit" layoutClass="navbar-form pull-left"}}
-        {{#bs-form-group}}
-          {{bs-input type="text" class="searchInput" placeholder="Search this site..."}}
-          {{bs-button type="default" buttonType="submit" icon="glyphicon glyphicon-search"}}
-        {{/bs-form-group}}
-      {{/bs-form}}
 
       <ul class="nav navbar-nav pull-right">
         {{#bs-dropdown tagName="li"}}
           {{#bs-dropdown-toggle}}
-            <span class="glyphicon glyphicon-user"></span> j <span class="caret"></span>
+            <span class="glyphicon glyphicon-user"></span> Мой аккаунт <span class="caret"></span>
           {{/bs-dropdown-toggle}}
           {{#bs-dropdown-menu}}
             <li>{{#link-to "index"}} <span class="glyphicon glyphicon-wrench"></span> Settings {{/link-to}}</li>
@@ -62,7 +45,4 @@
       </ul>
     </div>
   </div>
-</nav> --}}
-
-
-
+</nav>
