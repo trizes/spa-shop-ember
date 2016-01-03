@@ -12,47 +12,6 @@
   </div>
 </div>
 
-<div class="row" id="bigCallout">
-  <div class="col-md-12">
-
-    {{#if isAlertNeeded}}
-      {{#bs-alert type="success"}}
-        <h4>Success!</h4>
-        <p>You just made this element display by using jQuery</p>
-      {{/bs-alert}}
-    {{/if}}
-
-    {{!-- Visible only on small devices --}}
-    <div class="well well-small visible-xs">
-      {{#link-to "about" class="btn btn-lg btn-block btn-default"}}
-        <span class="glyphicon glyphicon-phone"> Позвоните нам!</span>
-      {{/link-to}}
-    </div>{{!-- end well-small --}}
-
-    <div class="well">
-      <div class="page-header">
-        <h1>A Fancy Header <small>A subheader for extra awesome</small></h1>
-      </div>{{!-- end page-header --}}
-
-      <p class="lead">Some solid leading copy will help get your users engaged. Use this area to come up with something real nice.</p>
-
-      {{link-to "About" "about" class="btn btn-lg btn-primary"}}
-      {{link-to "A secondary link" "about" class="btn btn-lg btn-link"}}
-      <button class="btn btn-lg btn-link" {{action "toggleAlert"}}>
-        Toggle alert
-      </button>
-    </div>{{!-- end well --}}
-  </div>{{!-- end col-12 --}}
-</div>{{!-- end bigCallout --}}
-
-<div class="row" id="featuresHeading">
-  <div class="col-md-12">
-    <h2>Больше продуктов</h2>
-    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-</div>
-
 <div class="row" id="features">
   <div class="col-sm-4 feature">
     <div class="panel panel-default">
@@ -65,7 +24,7 @@
 
         <p>Супер кран маевского с полной закруткой и латунной откруткой</p>
 
-        {{link-to "Заказать" "about" class="btn btn-warning btn-block"}}
+        {{link-to "Заказать" "contacts" class="btn btn-warning btn-block"}}
       </div>
     </div>
   </div>{{!-- end feature --}}
@@ -81,7 +40,7 @@
 
         <p>Супер кран маевского с полной закруткой и латунной откруткой</p>
 
-        {{link-to "Заказать" "about" class="btn btn-danger btn-block"}}
+        {{link-to "Заказать" "contacts" class="btn btn-danger btn-block"}}
       </div>
     </div>
   </div>{{!-- end feature --}}
@@ -97,52 +56,11 @@
 
         <p>Супер кран маевского с полной закруткой и латунной откруткой</p>
 
-        {{link-to "Заказать сейчас" "about" class="btn btn-info btn-block"}}
+        {{link-to "Заказать сейчас" "contacts" class="btn btn-info btn-block"}}
       </div>
     </div>
   </div>{{!-- end feature --}}
 </div>
-
-<div class="row" id="moreInfo">
-  <div class="col-sm-6">
-    <h3>Next Tabbable Content</h3>
-
-    {{bs-tabs-directions}}
-  </div>{{!-- end col-sm-6 --}}
-
-  <div class="col-sm-6">
-    <h3>Some Text Info</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi iure animi laboriosam vitae, cumque sapiente quisquam excepturi earum minus ex facere reiciendis maxime possimus esse aperiam, nobis obcaecati alias id.</p>
-
-    <h4>A List Group</h4>
-
-    <div class="list-group">
-      <a href="" class="list-group-item">
-        <h4 class="list-group-item-heading">Kale</h4>
-        <p class="list-group-item-text">Kale or borecole is a vegetable, in which the central leaves do no form a head.</p>
-      </a>
-
-      <a href="" class="list-group-item">
-        <h4 class="list-group-item-heading">Carrots</h4>
-        <p class="list-group-item-text">Kale or borecole is a vegetable, in which the central leaves do no form a head.</p>
-      </a>
-
-      <a href="" class="list-group-item">
-        <h4 class="list-group-item-heading">Steel-cut parts</h4>
-        <p class="list-group-item-text">Kale or borecole is a vegetable, in which the central leaves do no form a head.</p>
-      </a>
-
-      <a href="" class="list-group-item">
-        <h4 class="list-group-item-heading">Kale</h4>
-        <p class="list-group-item-text">Kale or borecole is a vegetable, in which the central leaves do no form a head.</p>
-      </a>
-    </div>{{!-- end list-group --}}
-
-    <h5>A Small Heading</h5>
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ipsa, illo beatae! Dolores maiores aliquid fuga dicta accusamus assumenda in libero voluptatum provident dolorum doloremque aliquam, esse necessitatibus fugiat sint.</p>
-  </div>{{!-- end col-sm-6 --}}
-</div>{{!-- end moreInfo --}}
 
 <hr>
 

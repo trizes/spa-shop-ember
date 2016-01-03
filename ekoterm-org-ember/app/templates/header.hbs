@@ -14,18 +14,12 @@
 
     <div class="collapse navbar-collapse" id="navbar-responsive-collapse">
       <ul class="nav navbar-nav">
-        {{#link-to 'index' tagName='li'}}
-          {{#link-to "index"}}
-            Главная <span class="sr-only">(current)</span>
-          {{/link-to}}
-        {{/link-to}}
-
         {{#link-to 'contacts' tagName='li'}}
           {{link-to 'Контакты' 'contacts'}}
         {{/link-to}}
 
-        {{#link-to 'about' tagName='li'}}
-          {{link-to 'О магазине' 'about'}}
+        {{#link-to 'pricelists' tagName='li'}}
+          {{link-to 'Прайс лист' 'pricelists'}}
         {{/link-to}}
       </ul>
 
@@ -44,5 +38,5 @@
         {{/bs-dropdown}}
       </ul>
     </div>
-  </div>
-</nav>
+  </div>{{!-- end container --}}
+</nav>{{!-- end navbar --}}
