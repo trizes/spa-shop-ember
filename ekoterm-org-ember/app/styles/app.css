@@ -39,6 +39,12 @@ footer {
   padding: 0;
 }
 
+.no-padding [class*="col-"] {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+
 /*-----------------------------
   Typography
   -----------------------------*/
@@ -101,10 +107,6 @@ ul.unstyled {
 /*-----------------------------
   Navbar
   -----------------------------*/
-
-.searchInput {
-  width: 100%;
-}
 
 .ekoterm-logo {
   max-width: 120%;

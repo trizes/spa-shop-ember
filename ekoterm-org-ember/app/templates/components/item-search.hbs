@@ -1,10 +1,6 @@
-{{#bs-form action="submit" layoutClass="form-inline" id="searchForm"}}
-  <div class="col-xs-10 formElems" id="formCol10">
-    {{#bs-form-group class="form-group-lg" id="searchGroup"}}
-      {{bs-input type="text" class="form-control" id="searchInput" placeholder="Найти товары..."}}
-    {{/bs-form-group}}
-  </div>
-  <div class="col-xs-2" id="formCol2">
-    {{bs-button type="primary btn-lg" buttonType="submit" icon="glyphicon glyphicon-search"}}
-  </div>
-{{/bs-form}}
+<div class="input-group input-group-lg">
+  {{bs-input type="text" class="form-control input-lg" placeholder="Найти товары..."}}
+  <span class="input-group-btn">
+    {{bs-button type="btn btn-warning btn-lg" buttonType="submit" icon="glyphicon glyphicon-search"}}
+  </span>
+</div>
