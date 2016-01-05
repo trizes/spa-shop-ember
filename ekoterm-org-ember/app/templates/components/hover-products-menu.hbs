@@ -1,42 +1,41 @@
 <div id="sidebar">
   <div id="sidebar-wrapper">
-    <ul class="sidebar-nav">
+    <ul class="nav nav-pills nav-stacked sidebarNav">
       <li class="sidebar-description">
         Категории товаров
       </li>
 
-      <li>{{#link-to "contacts"}}
-            Котельное оборудование
-          {{/link-to}}
-      </li>
-      <li>{{#link-to "contacts"}}
-            Насосное оборудование
-          {{/link-to}}
-      </li>
-      <li>{{#link-to "contacts"}}
-            Радиаторы
-          {{/link-to}}
-      </li>
-      <li>{{#link-to "contacts"}}
-            Трубы и фитинги
-          {{/link-to}}
-      </li>
-      <li>{{#link-to "contacts"}}
-            Канализация
-          {{/link-to}}
-      </li>
-      <li>{{#link-to "contacts"}}
-            Запорная арматура
-          {{/link-to}}
-      </li>
-      <li>{{#link-to "contacts"}}
-            Системы теплого пола
-          {{/link-to}}
-      </li>
-      <li>{{#link-to "contacts"}}
-            Энергия солнца
-          {{/link-to}}
-      </li>
+      {{#link-to 'index' tagName='li'}}
+        {{link-to 'Котельное оборудование' 'index'}}
+      {{/link-to}}
+
+      {{#link-to 'contacts' tagName='li'}}
+        {{link-to 'Насосное оборудование' 'contacts'}}
+      {{/link-to}}
+
+      {{#link-to 'contacts' tagName='li'}}
+        {{link-to 'Радиаторы' 'contacts'}}
+      {{/link-to}}
+
+      {{#link-to 'contacts' tagName='li'}}
+        {{link-to 'Трубы и фитинги' 'contacts'}}
+      {{/link-to}}
+
+      {{#link-to 'contacts' tagName='li'}}
+        {{link-to 'Канализация' 'contacts'}}
+      {{/link-to}}
+
+      {{#link-to 'contacts' tagName='li'}}
+        {{link-to 'Запорная арматура' 'contacts'}}
+      {{/link-to}}
+
+      {{#link-to 'contacts' tagName='li'}}
+        {{link-to 'Системы теплого пола' 'contacts'}}
+      {{/link-to}}
+
+      {{#link-to 'contacts' tagName='li'}}
+        {{link-to 'Энергия солнца' 'contacts'}}
+      {{/link-to}}
     </ul>
   </div>
 </div>
