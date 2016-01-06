@@ -151,12 +151,22 @@ ul.unstyled {
   max-height: 120%;
 }
 
-#navbar-responsive-collapse ul li {
-  border-left: 1px solid rgba(119, 119, 119, 0.27);
+#navbar-responsive-collapse ul li:last-child {
+  border-left: 1px solid rgba(119, 119, 119, 0.2);
 }
 
-#navbar-responsive-collapse ul li:last-child {
-  border-right: 1px solid rgba(119, 119, 119, 0.27);
+/*#navbar-responsive-collapse ul li:last-child {
+  border-right: 1px solid rgba(119, 119, 119, 0.2);
+}*/
+
+.contact-options {
+  font-size: 12px;
+  text-align: right;
+}
+
+.contact-options li {
+  list-style-type: none;
+  /*text-align: justify;*/
 }
 
 /*-----------------------------
@@ -165,8 +175,8 @@ ul.unstyled {
 
 #sidebar {
   background-color: #fff;
-  border: 1px solid #CCCCCC;
-  border-radius: 2px;
+  border-top: 1px solid #CCCCCC;
+  border-left: 1px solid #CCCCCC;
 }
 
 .sidebar-header {
@@ -184,7 +194,6 @@ ul.unstyled {
 
 .sidebar-content li {
   list-style-type: none;
-  padding: 5px 0 0 20px;
   height: 30px;
   font-size: 14px;
   border-top: 1px solid #eee;
@@ -198,6 +207,8 @@ ul.unstyled {
 
 .sidebar-content li a {
   color: #333;
+  display: block;
+  padding: 5px 0 0 20px;
 }
 
 .sidebar-content li a:hover {
@@ -216,17 +227,18 @@ ul.unstyled {
    -----------------------------*/
 
 .carousel-caption {
-  font-size: 24px;
+  font-size: 16px;
+  color: #FF6F3F;
 }
 
 .carousel-caption h4 {
-  font-size: 32px;
+  font-size: 24px;
 }
 
 #ekoCarousel .item { height: 240px; }
 
 #slide1 {
-  background: url('../images/carousel_medium_01.jpg') top center no-repeat;
+  background: url('../images/buderus_medium.jpg') top center no-repeat;
 }
 
 #slide2 {
@@ -235,6 +247,38 @@ ul.unstyled {
 
 #slide3 {
   background: url('../images/carousel_medium_03.jpg') top center no-repeat;
+}
+
+.carousel-header-wrapper {
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+  background-color: #fff;
+  text-align: center;
+  /*border: 1px solid #CCCCCC;*/
+}
+
+.carousel-header-link-li {
+  display: inline-block;
+  font-size: 14px;
+  /*margin: 0 0 0 20px;*/
+  margin: 0 15px;
+  line-height: 1.1;
+  list-style-type: none;
+}
+
+.carousel-header-link {
+  display: block;
+  padding: 10px 0;
+  color: #FF6F3F;
+}
+
+.carousel-header-link:hover {
+  text-decoration: none;
+  color: #CC4417;
+}
+
+.carousel-header-link:active {
+  text-decoration: underline;
 }
 
 
@@ -280,7 +324,7 @@ ul.unstyled {
 }
 
 /*Large desktop*/
-/*@media (min-width: 1200px) {
+@media (min-width: 1200px) {
   #ekoCarousel .item { height: 240px; }
 
   #slide1 {
@@ -295,4 +339,4 @@ ul.unstyled {
     background: url('../images/carousel_large_03.jpg') top center no-repeat;
   }
 }
-*/
+
