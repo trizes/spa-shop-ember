@@ -1,10 +1,12 @@
 <div id="sidebar">
-  <div id="sidebar-wrapper">
-    <ul class="nav nav-pills nav-stacked sidebarNav">
-      <li class="sidebar-description">
+  <div class="sidebar-wrapper">
+    <div class="sidebar-header-wrapper">
+      <h3 class="sidebar-header">
         Категории товаров
-      </li>
+      </h3>
+    </div>
 
+    <ul class="sidebar-content">
       {{#link-to 'index' tagName='li'}}
         {{link-to 'Котельное оборудование' 'index'}}
       {{/link-to}}

@@ -57,22 +57,8 @@ footer {
   padding: 20px;
 }
 
-#searchInput, #searchGroup {
-  /*height: 45px;*/
-  width: 100%;
-}
-
-#searchForm {
-  margin-bottom: 15px;
-  height: 50px;
-}
-
-#formCol2 {
-  /*padding: 0;*/
-}
-
-#formCol10 {
-  padding: 0;
+#menuAndCarousel {
+  margin-bottom: 25px;
 }
 
 .no-padding [class*="col-"] {
@@ -80,8 +66,17 @@ footer {
   padding-right: 0 !important;
 }
 
+.no-padding-left {
+  padding-left: 0 !important;
+}
+
+.no-padding-right {
+  padding-right: 0 !important;
+}
+
+
 .searchBar {
-  margin: 5px 0 12px 0;
+  margin: 5px 0 25px 0;
 }
 
 #menuAndSearch {
@@ -168,13 +163,53 @@ ul.unstyled {
   Sidebar
   -----------------------------*/
 
-#sidebar-wrapper {
-  /*background: #000;*/
+#sidebar {
+  background-color: #fff;
+  border: 1px solid #CCCCCC;
+  border-radius: 2px;
 }
 
-/*.sidebar-nav {
+.sidebar-header {
+  background-color: #eee;
+  margin: 0;
+  padding: 10px 0px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.sidebar-content {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-content li {
   list-style-type: none;
-}*/
+  padding: 5px 0 0 20px;
+  height: 30px;
+  font-size: 14px;
+  border-top: 1px solid #eee;
+}
+
+.sidebar-content li:hover {
+  background-color: rgba(159, 214, 0, 0.6);
+}
+
+/*Sidebar Links*/
+
+.sidebar-content li a {
+  color: #333;
+}
+
+.sidebar-content li a:hover {
+  text-decoration: none;
+}
+
+
+
+.sidebar-content li:before {
+  
+}
+
 
 /*-----------------------------
   Carousel
@@ -188,7 +223,7 @@ ul.unstyled {
   font-size: 32px;
 }
 
-#ekoCarousel .item { height: 400px; }
+#ekoCarousel .item { height: 240px; }
 
 #slide1 {
   background: url('../images/carousel_medium_01.jpg') top center no-repeat;
@@ -201,6 +236,7 @@ ul.unstyled {
 #slide3 {
   background: url('../images/carousel_medium_03.jpg') top center no-repeat;
 }
+
 
 /*-----------------------------
   Media Queries
@@ -220,7 +256,7 @@ ul.unstyled {
 
 /*Landscape phone to portrait tablet*/
 @media (max-width: 768px) {
-  #ekoCarousel .item { height: 310px; }
+  #ekoCarousel .item { height: 240px; }
 
   #slide1 {
     background: url('../images/carousel_small_01.jpg') top center no-repeat;
@@ -244,8 +280,8 @@ ul.unstyled {
 }
 
 /*Large desktop*/
-@media (min-width: 1200px) {
-  #ekoCarousel .item { height: 500px; }
+/*@media (min-width: 1200px) {
+  #ekoCarousel .item { height: 240px; }
 
   #slide1 {
     background: url('../images/carousel_large_01.jpg') top center no-repeat;
@@ -259,4 +295,4 @@ ul.unstyled {
     background: url('../images/carousel_large_03.jpg') top center no-repeat;
   }
 }
-
+*/
