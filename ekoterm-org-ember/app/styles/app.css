@@ -4,6 +4,12 @@
 
 body {
   background-color: #eee;
+  /*background: url('../images/background_option.jpg') top center no-repeat;
+  background-attachment: fixed;*/
+}
+
+#main {
+  /*background-color: #eee;*/
 }
 
 h1.sitelogo {
@@ -37,15 +43,6 @@ h1.sitelogo .warm {
 
 #inputMessage {
   margin-bottom: 15px;
-}
-
-footer.red {
-  background: #CC6600; /* Old browsers */
-  background: -moz-linear-gradient(top,  #CC6600 0%, #CC6633 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  #CC6600 0%,#CC6633 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  #CC6600 0%,#CC6633 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CC6600', endColorstr='#CC6633',GradientType=0 ); /* IE6-9 */
-
 }
 
 footer {
@@ -157,6 +154,14 @@ ul.unstyled {
 .ekoterm-logo {
   max-width: 120%;
   max-height: 120%;
+}
+
+#navbar-responsive-collapse ul li {
+  border-left: 1px solid rgba(119, 119, 119, 0.27);
+}
+
+#navbar-responsive-collapse ul li:last-child {
+  border-right: 1px solid rgba(119, 119, 119, 0.27);
 }
 
 /*-----------------------------
