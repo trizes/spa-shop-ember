@@ -177,6 +177,7 @@ ul.unstyled {
   background-color: #fff;
   border-top: 1px solid #CCCCCC;
   border-left: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
 }
 
 .sidebar-header {
@@ -225,6 +226,10 @@ ul.unstyled {
 /*-----------------------------
   Carousel
    -----------------------------*/
+
+#ekoCarousel {
+  border-bottom: 1px solid #CCCCCC;;
+}
 
 .carousel-caption {
   font-size: 16px;
