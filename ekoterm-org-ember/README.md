@@ -45,7 +45,8 @@ Specify what it takes to deploy your app.
 
 ### Image Optimiziation
 
-* `for i in `ls *.jpg`; do jpegtran -copy none -optimize $i > optimized_$i; done`
+* `for i in `ls *.jpg`; do jpegtran -copy none -progressive $i > progressive_$i; done`
+* `rename -v 's/^progressive_//' *.jpg`
 
 ## Further Reading / Useful Links
 
