@@ -1,0 +1,21 @@
+<li class="sidebar-item">
+  <a>
+      {{category}}
+  </a>
+  <ul class="sub-menu">
+    {{#each-in products as |product brands|}}
+      <div class="sub-menu-item-wrapper">
+        <li class="sub-menu-item">
+          <a class="sub-menu-link" href="/">
+            {{product}}
+          </a>
+          <ul class="sub-sub-menu">
+            {{#each brands as |brand|}}
+                <li class="sub-sub-menu-item"><a href="">{{brand}}</a></li>
+            {{/each}}
+          </ul>
+        </li>
+      </div>
+    {{/each-in}}
+    </ul>
+</li>
