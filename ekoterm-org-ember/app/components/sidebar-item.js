@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import $ from 'jquery';
 
 export default Ember.Component.extend({
   didRender() {
@@ -30,6 +31,6 @@ export default Ember.Component.extend({
       function() {
         $('.sub-menu', this).stop().animate({width:'hide'}, 100);
       }
-    )
+    );
   }
 });

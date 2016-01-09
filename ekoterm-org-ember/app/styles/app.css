@@ -47,11 +47,11 @@ h1.sitelogo .warm {
 
 footer {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#789915+0,729900+100 */
-  background: #789915; /* Old browsers */
-  background: -moz-linear-gradient(top,  #789915 0%, #729900 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  #789915 0%,#729900 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  #789915 0%,#729900 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#789915', endColorstr='#729900',GradientType=0 ); /* IE6-9 */
+  background: #000; /* Old browsers */
+  /*background: -moz-linear-gradient(top,  #789915 0%, #729900 100%);  /*FF3.6-15 */
+  /*background: -webkit-linear-gradient(top,  #789915 0%,#729900 100%); /* Chrome10-25,Safari5.1-6 
+  /*background: linear-gradient(to bottom,  #789915 0%,#729900 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#789915', endColorstr='#729900',GradientType=0 ); /* IE6-9 */
   color: #eee;
   font-size: 11px;
   padding: 20px;
@@ -83,6 +83,9 @@ footer {
   margin-bottom: 20px;
 }
 
+.map-info {
+  margin: 56px 0 30px 0;
+}
 /*-----------------------------
   Typography
   -----------------------------*/
@@ -163,9 +166,11 @@ ul.unstyled {
   font-size: 12px;
   text-align: right;
   /*margin-right: 18px;*/
+  height: 50px;
 }
 
-.contact-options li {
+.contact-options-ul {
+  padding: 0;
   list-style-type: none;
   /*text-align: justify;*/
 }
@@ -360,7 +365,17 @@ ul.unstyled {
   background: url('../images/carousel_medium_03.jpg') top center no-repeat;
 }
 
+/*-----------------------------
+  Pricelist
+  -----------------------------*/
 
+.table-striped-custom > tbody >tr:nth-of-type(even) {
+  background-color: #fcf8e3;
+}
+
+.table-striped-custom > tbody >tr:nth-of-type(odd) {
+  background-color: #fff;
+}
 
 /*-----------------------------
   Media Queries
