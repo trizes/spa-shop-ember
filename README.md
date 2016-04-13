@@ -1,7 +1,6 @@
-# Ekoterm-org-ember
+# Spa-shop-ember
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Single Page Application built with Ember.js for a brick&mortar shop.
 
 ## Prerequisites
 
@@ -15,7 +14,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone git@github.com:trizes/spa-shop-ember.git` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
@@ -39,16 +38,12 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
-
-Specify what it takes to deploy your app.
-
 ### Image Optimiziation
 
 * `for i in `ls *.jpg`; do jpegtran -copy none -progressive $i > progressive_$i; done`
 * `rename -v 's/^progressive_//' *.jpg`
 
-## Further Reading / Useful Links
+## Useful Links
 
 * [ember.js](http://emberjs.com/)
 * [ember-cli](http://www.ember-cli.com/)
