@@ -1,41 +1,16 @@
 <div id="sidebar">
-  <div id="sidebar-wrapper">
-    <ul class="nav nav-pills nav-stacked sidebarNav">
-      <li class="sidebar-description">
+  <div class="sidebar-wrapper">
+    <div class="sidebar-header-wrapper">
+      <h3 class="sidebar-header">
         Категории товаров
-      </li>
-
-      {{#link-to 'index' tagName='li'}}
-        {{link-to 'Котельное оборудование' 'index'}}
-      {{/link-to}}
-
-      {{#link-to 'contacts' tagName='li'}}
-        {{link-to 'Насосное оборудование' 'contacts'}}
-      {{/link-to}}
-
-      {{#link-to 'contacts' tagName='li'}}
-        {{link-to 'Радиаторы' 'contacts'}}
-      {{/link-to}}
-
-      {{#link-to 'contacts' tagName='li'}}
-        {{link-to 'Трубы и фитинги' 'contacts'}}
-      {{/link-to}}
-
-      {{#link-to 'contacts' tagName='li'}}
-        {{link-to 'Канализация' 'contacts'}}
-      {{/link-to}}
-
-      {{#link-to 'contacts' tagName='li'}}
-        {{link-to 'Запорная арматура' 'contacts'}}
-      {{/link-to}}
-
-      {{#link-to 'contacts' tagName='li'}}
-        {{link-to 'Системы теплого пола' 'contacts'}}
-      {{/link-to}}
-
-      {{#link-to 'contacts' tagName='li'}}
-        {{link-to 'Энергия солнца' 'contacts'}}
-      {{/link-to}}
+      </h3>
+    </div>
+    <ul class="sidebar-content">
+      {{#each-in categories as |category products|}}
+        <div class="sidebar-item-wrapper">
+          {{sidebar-item category=category products=products}}
+        </div>{{!-- sidebar-item-wrapper --}}
+      {{/each-in}}
     </ul>
   </div>
 </div>

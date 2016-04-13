@@ -43,6 +43,11 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 Specify what it takes to deploy your app.
 
+### Image Optimiziation
+
+* `for i in `ls *.jpg`; do jpegtran -copy none -progressive $i > progressive_$i; done`
+* `rename -v 's/^progressive_//' *.jpg`
+
 ## Further Reading / Useful Links
 
 * [ember.js](http://emberjs.com/)
